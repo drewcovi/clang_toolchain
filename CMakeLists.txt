@@ -255,7 +255,7 @@ if(BUILD_BINUTILS)
     ExternalProject_Add(binutils
         GIT_REPOSITORY git://sourceware.org/git/binutils-gdb.git
         GIT_TAG ${BINUTILS_TAG}
-        GIT_SHALLOW ON
+        GIT_SHALLOW OFF
         PATCH_COMMAND ${BINUTILS_PATCH}
         BUILD_IN_SOURCE 0
         SOURCE_DIR ${THIRD_PARTY_DIR}/binutils
